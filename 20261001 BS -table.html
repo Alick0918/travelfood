@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Table(表格)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <style>
+        @media screen and (max-width:768px){
+         .table-rwd thead{
+            display: none;
+         }
+         .table-rwd tbody tr{
+            display: block;
+         }
+         .table-rwd tbody tr td{
+            display: block;
+            overflow: hidden;
+         }
+
+         /* 偽元素 */
+         .table-rwd tbody tr td::before{
+            content: attr(data-th) " : ";
+            font-weight: 700px;
+            color: rgb(76, 65, 224);
+            font-size: 20px;
+            display: block;
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding-right: 10px;
+         }
+         .table-rwd tbody tr td span{
+            display: block;
+            float: left;
+            width:80%;
+            font-size: 18px;
+            
+         }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display-2 fw-700 text-center mt-4">飲料產品列表</div>
+
+        <table class="table mt-3 table-bordered table-striped table-sm table-rwd">
+            <thead class="table-dark">
+                <tr>
+                    <th>產品編號</th>
+                    <th>產品名稱</th>
+                    <th>產品價格</th>
+                    <th>產品數量</th>
+                    <th>產品備註</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-danger">
+                    <td data-th="產品編號"><span>01</span></td>
+                    <td data-th="產品名稱"><span>伯爵茶</span></td>
+                    <td data-th="產品價格"><span>35</span></td>
+                    <td data-th="產品數量"><span>10</span></td>
+                    <td data-th="產品備註"><span>無糖正常冰</span></td>
+                </tr>
+                <tr class="table-warning">
+                    <td>02</td>
+                    <td>蜜桃茶</td>
+                    <td>35</td>
+                    <td>15</td>
+                    <td>無糖少冰</td>
+                </tr>
+                <tr class="table-info">
+                    <td>03</td>
+                    <td>四季春</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>微糖微冰</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-4.0.0.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+```html
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練習01. 使用CSS語法配置版面</title>
+<style>
+    :root{
+        --disney-blue:#0057b8;
+        --disney-gold:#ffc72c;
+        --disney-red:#d71920;
+        --disney-white:#fff8e7;
+        --disney-black:#1a1a1a;
+        --disney-shadow:#333333;
+        --disney-hover-shadow:#999999;
+        --disney-content:#fff1c7;
+        --disney-logo:#4aa3df;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: var(--disney-white);
+    }
+    .wrapper{
+        width: 1024px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo{
+        width: 1024px;
+        height: 300px;
+        background-color: var(--disney-logo);
+        background-image: url(image/1.avif);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .nav{
+        background-color: var(--disney-blue);
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+   .nav ul{
+        display: inline-block;
+   }
+
+   .nav ul li{
+        float: left;
+        list-style-type: none;
+   }
+
+   .nav ul li a{
+        text-decoration: none;
+        background-color: var(--disney-gold);
+        color: var(--disney-black);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-right: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px var(--disney-shadow);
+        font-size: 20px;
+        font-weight: bold;
+   }
+
+   .nav ul li a:hover{
+        border-radius: 0;
+        box-shadow: 2px 2px 2px 2px var(--disney-hover-shadow);
+   }
+    
+   .content{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--disney-content);
+   }
+
+   .content h1{
+    text-align: center;
+    color: var(--disney-red);
+    font-size: 30px;
+    font-weight: bold;
+   }
+
+   .content P{
+    font-size: 20px;
+    margin-top: 15px;
+   }
+
+   .content a{
+    display: block;
+    background-color: var(--disney-gold);
+    width: 130px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: var(--disney-black);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px var(--disney-shadow);
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 40px;
+   }
+
+   .content a:hover{
+    border-radius: 0;
+    box-shadow: 2px 2px 2px 2px var(--disney-hover-shadow);
+   }
+
+   .footer{
+    background-color: var(--disney-red);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="banner">
+            <div class="logo"></div>
+                <div class="nav">
+                <ul>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">合作店家</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="content">
+            <h1>歡迎光臨</h1>
+            <p>反應笑着招聘本文徹底法國學科他也輸出轉變，圖像化股東辦公室，果然透明描述商機住房，群發早已戰爭國外各級瞬間採訪心理通信森林交通節目遊戲，婚姻人間大全世界手冊宜蘭看見評分也要，一旦不夠而在規律愛情擁有今年評估我在政府解釋，下載地址仔細指導點頭圖片，違反瀏覽器表現竟然福建，任何理由，對面我都長大眼淚加。</p>
+            <p>作為一年建議還是小七出版社漂亮房產需求一場，鐵路開發調節規格同學便利商店我說更好技能每個，湖北傳說再說國產關係這個需求圖像化，產業近日，內容簡介就在幾乎對她可能會他不風險理論英語不如高效，幾天住房範圍傳奇表情暴力網頁課程，收集影響評論交通享受作戰一款一段時間，前面彩色情感如有只是，社會鄉民們股東附近數碼收費事故是誰，加入專用是啊並非門派數碼相機安徽天空規則，居民鄉民明天許多制度笑着工資，建材關鍵字短信像是走向實業一時，醫學學者台南什麼事到了體會韓國處於挑戰，簡體我對電源，一大部落卻是，綜合某個。</p>
+            <p>一生要在物流並沒有高效三大並非大多加強生意你可以，我國手續例如保證往往，高考你們，經歷呼吸美麗武器，上了一陣很有魔獸父親，進一步仔細，部落格數量權利權威台北答案魯蛇安徽比如越來越甚至精神，一次結束性。</p>
+             <a href="https://www.google.com/?hl=zh_TW" target="_blank">了解更多</a>
+             </div>
+            <div class="footer">
+                PowerBy Alick 2026.09.23
+            </div>
+    </div>
+</body>
+</html>
+```

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --primary-warm: #d96b3b;
+    --secondary-warm: #f6d6a8;
+    --page-background: #fff4df;
+    --logo-background: #e9a15c;
+    --nav-text: #4a2518;
+    --content-background: #f3dfc1;
+    --heading-color: #c43d2f;
+    --shadow-dark: #704c3a;
+    --shadow-light: #b99a84;
+    --footer-background: #c94f3d;
+    --footer-text: #fff8ed;
+}
+
+body {
+    font-family: "IBM Plex Sans JP", sans-serif;
+}
+
+/* 字體粗細度 */
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* ===== 暖色・大地色系標題 ===== */
+
+/* 第一層標題｜陶土紅棕 */
+.mytitle-01 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.3;
+    text-align: center;
+    color: #A64B2A;
+    letter-spacing: 1px;
+}
+
+/* 第二層標題｜焦糖棕 */
+.mytitle-02 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    color: #8A5A3B;
+    letter-spacing: 0.5px;
+}
+
+/* 第三層標題｜橄欖大地綠 */
+.mytitle-03 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    color: #6F7042;
+    letter-spacing: 0.3px;
+}
+
+.mytitle-04 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #48dfc3;
+    letter-spacing: 0.3px;
+}
+
+.mytitle-05 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #6f27c7;
+    letter-spacing: 0.3px;
+}
+
+/* 背景圖 */
+.bg-img {
+    background-position: center center;
+    background-size: cover;
+} 

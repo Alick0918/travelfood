@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 語法簡介</title>
+    <link rel="stylesheet" href="myall.css">
+</head>
+
+<body>
+    <p class="mytitle-02" id="demo01">JAVASCRIPT 練習</p>
+    <p class="mytitle-01" id="demo02">這是一個大標題</p>
+    <p class="mytitle-01" id="demo03">這是一個大標題</p>
+    <p class="mytitle-01" id="demo04">這是一個大標題</p>
+    <p class="mytitle-01" id="demo05">這是一個大標題</p>
+
+    <div id="demo06"></div>
+    <div id="demo07"></div>
+
+    <!-- 顯示每一家車子的品牌並加上序號 (forEach)
+    1 : BMW 
+    2 : Benz
+    -->
+
+    <h1 class="mytitle-02">顯示每一家車子的品牌並加上序號</h1>
+    <div id="demo08">
+        <p class="mytitle-04">1 : BMW</p>
+    </div>
+
+    <!-- 
+    顯示每一個人的基本資料
+    編號1．姓名xx．年齡xx歲．居住在XX城市．email：xx．手機號碼：xx 
+    -->
+
+    <h1 class="mytitle-03">顯示每一個人的基本資料 (JSON)</h1>
+    <div id="demo09">
+        <p class="=mytitle-05">編號1 姓名xx 年齡xx歲 居住在XX城市 email xx 手機號碼 xx</p>
+    </div>
+
+
+
+    <script src="../js/jquery-4.0.0.js"></script>
+    <script>
+        // javascript 原生語法
+        document.getElementById("demo01").innerHTML = "Hello World!";
+        document.getElementById("demo02").innerHTML = "這是一個Hello02";
+
+        // jQuery 語法
+        $("#demo03").html("這個一個Hello03");
+        $("#demo04").html("這個一個Hello04");
+        $("#demo05").html("這個一個Hello05");
+
+        // for迴圈
+        // i++ i=i+1
+        for (i = 1; i < 11; i++) {
+            console.log(i + ": Hello!")
+        }
+
+        for (i = 1; i < 10; i++) {
+            for (j = 1; j < 10; j++) {
+                console.log(i + " X " + j + " = " + i * j);
+            }
+        }
+
+        for (i = 0; i < 5; i++) {
+            $("#demo06").append('<p class="mytitle-03">這是一個Hello</p>')
+        }
+
+        for (i = 0; i < 5; i++) {
+            $("#demo07").append('<img src="../image/1.avif" width="800px" alt="">')
+
+        }
+
+        // 陣列 Array
+        const cars = ["BMW", "Benz", "Mazdz", "Nissan", "Toyota", "Honda", "Volkswagen", "Ford", "Hyundai", "Kia", "Audi", "Lexus", "Subaru", "Volvo", "Porsche", "Land Rover", "Mitsubishi", "Peugeot", "Tesla", "Mitsubishi"]
+        console.log(cars);
+        console.log(cars[0]);
+        console.log(cars[1]);
+        console.log(cars[2]);
+        console.log(cars[3]);
+
+        // 使用for迴圈印出cars array的內容
+        for (i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+        }
+
+        // 使用forEach讀取陣列
+        cars.forEach(function (item, index) {
+            console.log(index);
+            console.log(item);
+        })
+
+        cars.forEach(function (item, index) {
+            $("#demo08").append(
+                '<p class="mytitle-04">' + index + ' : ' + item + '</p>');
+        });
+
+
+        // JSON 格式
+        const persons = [
+            {
+                "name": "Alick",
+                "age": 20,
+                "city": "臺中市",
+                "email": "Alick@example.com",
+                "phone": "0910-010-010"
+            },
+            {
+                "name": "Air",
+                "age": 25,
+                "city": "臺北市",
+                "email": "Air@example.com",
+                "phone": "0920-020-020"
+            },
+            {
+                "name": "Ashley",
+                "age": 18,
+                "city": "臺南市",
+                "email": "Ashley@example.com",
+                "phone": "0930-030-030"
+            },
+            {
+                "name": "王小明",
+                "age": 28,
+                "city": "臺北市",
+                "email": "xiaoming@example.com",
+                "phone": "0912-345-678"
+            },
+            {
+                "name": "李小華",
+                "age": 32,
+                "city": "新北市",
+                "email": "xiaohua@example.com",
+                "phone": "0923-456-789"
+            },
+            {
+                "name": "陳怡君",
+                "age": 25,
+                "city": "桃園市",
+                "email": "yijun@example.com",
+                "phone": "0934-567-890"
+            },
+            {
+                "name": "林志豪",
+                "age": 35,
+                "city": "臺中市",
+                "email": "zhihao@example.com",
+                "phone": "0945-678-901"
+            },
+            {
+                "name": "張雅婷",
+                "age": 29,
+                "city": "臺南市",
+                "email": "yating@example.com",
+                "phone": "0956-789-012"
+            },
+            {
+                "name": "黃建宏",
+                "age": 41,
+                "city": "高雄市",
+                "email": "jianhong@example.com",
+                "phone": "0967-890-123"
+            },
+            {
+                "name": "劉欣怡",
+                "age": 23,
+                "city": "新竹市",
+                "email": "xinyi@example.com",
+                "phone": "0978-901-234"
+            },
+            {
+                "name": "吳俊傑",
+                "age": 38,
+                "city": "基隆市",
+                "email": "junjie@example.com",
+                "phone": "0989-012-345"
+            },
+            {
+                "name": "周美玲",
+                "age": 31,
+                "city": "嘉義市",
+                "email": "meiling@example.com",
+                "phone": "0901-123-456"
+            },
+            {
+                "name": "許家豪",
+                "age": 27,
+                "city": "宜蘭縣",
+                "email": "jiahao@example.com",
+                "phone": "0911-234-567"
+            }
+        ];
+
+        console.log(persons);
+        persons.forEach(function (item, index) {
+            console.log(item.name)
+        })
+
+
+        // 顯示每一個人的基本資料
+        // persons.forEach(function (item, index) {
+        //     $("#demo09").append(
+        //         '<p class="mytitle-05">編號' + index + '姓名' + item.name + '年齡' + item.age + '歲 居住在 ' + item.city + '城市 email ' + item.email + '電話' + item.phone + '。' </p > '
+        //     )
+        // });
+
+        persons.forEach(function (item, index) {
+            $("#demo09").append(
+                '<p class="mytitle-05">編號' + ( index +1 ) +
+                ' 姓名：' + item.name +
+                ' 年齡：' + item.age + '歲' +
+                ' 居住在：' + item.city +
+                ' email：' + item.email +
+                ' 電話：' + item.phone +
+                '</p>'
+            );
+        });
+
+
+
+    </script>
+</body>
+
+</html>
